@@ -17,7 +17,7 @@ services:
     build:
       context: rapidpro
       args:
-        RAPIDPRO_VERSION: 7.4.2
+        RAPIDPRO_VERSION: 8.3.99
     depends_on:
     - redis
     - postgresql
@@ -46,7 +46,7 @@ services:
     build:
       context: mailroom
       args:
-        MAILROOM_VERSION: 7.4.1
+        MAILROOM_VERSION: 8.3.48
     environment:
     - POSTGRES_PORT=5432
     - POSTGRES_HOST=postgresql
@@ -62,7 +62,7 @@ services:
     build:
       context: courier
       args:
-        COURIER_VERSION: 7.4.0
+        COURIER_VERSION: 8.3.28
     environment:
     - POSTGRES_PORT=5432
     - POSTGRES_HOST=postgresql

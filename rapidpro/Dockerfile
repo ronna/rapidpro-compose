@@ -46,7 +46,7 @@ USER rapidpro
 RUN mkdir app
 RUN set -ex \
       && export RAPIDPRO_VERSION="v$RAPIDPRO_VERSION" \
-      && export RAPIDPRO_REPO_URL="https://github.com/rapidpro/rapidpro/archive/$RAPIDPRO_VERSION.tar.gz" \
+      && export RAPIDPRO_REPO_URL="https://github.com/nyaruka/rapidpro/archive/$RAPIDPRO_VERSION.tar.gz" \
       && echo "Downloading RapidPro $RAPIDPRO_VERSION from $RAPIDPRO_REPO_URL" \
       && wget -q -O rapidpro.tar.gz $RAPIDPRO_REPO_URL \
       && tar -C app -xf rapidpro.tar.gz --strip-components=1 \

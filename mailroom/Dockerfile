@@ -18,7 +18,7 @@ USER mailroom
 RUN mkdir -p /home/mailroom/app
 WORKDIR /home/mailroom
 RUN set -ex; \
-    wget -qO mailroom.tar.gz "https://github.com/rapidpro/mailroom/releases/download/v${MAILROOM_VERSION}/mailroom_${MAILROOM_VERSION}_linux_amd64.tar.gz" \
+    wget -qO mailroom.tar.gz "https://github.com/nyaruka/mailroom/releases/download/v${MAILROOM_VERSION}/mailroom_${MAILROOM_VERSION}_linux_amd64.tar.gz" \
     && tar -C ./app -xf mailroom.tar.gz \
     && rm -rf mailroom mailroom.tar.gz
 WORKDIR app
